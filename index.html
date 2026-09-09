@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabaña Amakaik · Aberdeen Angus puro de pedigrí medido con Breedplan y E.R.A.</title>
+<meta name="description" content="Cabaña de Aberdeen Angus en la cuenca del Salado, Buenos Aires. Toros y vientres puros de pedigrí criados 100% a pasto, con datos completos de Breedplan y E.R.A. Catálogos anuales, semen y embriones.">
+<link rel="canonical" href="https://amakaik.com/">
+<meta property="og:title" content="Cabaña Amakaik · Aberdeen Angus productivo">
+<meta property="og:description" content="Angus puro de pedigrí criado 100% a pasto en la cuenca del Salado, con información completa de Breedplan y E.R.A.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amakaik.com/">
+<meta property="og:image" content="https://amakaik.com/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vino:#6E1023;
+  --vino-hondo:#4A0A17;
+  --dorado:#C9A24B;
+  --papel:#FBF8F3;
+  --tinta:#241A14;
+  --tierra:#8A8178;
+  --pasto:#3A4A3F;
+  --linea:rgba(36,26,20,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;background:var(--papel);color:var(--tinta);
+  font-family:'Oswald',system-ui,sans-serif;font-weight:300;
+  font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.94;margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.env{width:min(1120px,92vw);margin-inline:auto}
+.medida{max-width:64ch}
+
+/* ---------- barra superior ---------- */
+.barra{
+  position:sticky;top:0;z-index:50;background:var(--vino);color:#fff;
+  border-bottom:2px solid var(--dorado);
+}
+.barra .env{display:flex;align-items:center;gap:28px;min-height:64px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.marca img{height:34px;width:auto}
+.marca span{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.10em}
+.nav{display:flex;gap:26px;font-size:14px;font-weight:400;letter-spacing:.06em}
+.nav a{text-decoration:none;opacity:.86;padding:4px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a:focus-visible{opacity:1;border-bottom-color:var(--dorado)}
+.wsp{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  background:var(--dorado);color:var(--vino-hondo);font-weight:500;font-size:14px;
+  padding:8px 16px;letter-spacing:.04em;
+}
+.wsp:hover{background:#dcb75f}
+.abrir-nav{display:none}
+
+/* ---------- portada ---------- */
+.portada{position:relative;background:var(--vino-hondo);color:#fff;overflow:hidden}
+.portada .foto{
+  position:absolute;inset:0;
+  background-image:linear-gradient(105deg,rgba(74,10,23,.94) 0%,rgba(74,10,23,.72) 45%,rgba(74,10,23,.42) 100%),
+                   radial-gradient(circle at 72% 40%,#7d5a3a,#3b2a1e),
+                   url('img/DJI_0089.webp');
+  background-size:cover;background-position:center;
+}
+.portada .env{position:relative;padding:96px 0 0}
+.portada h1{font-size:clamp(52px,8.4vw,110px);max-width:14ch}
+.entrada{font-size:clamp(17px,2vw,21px);font-weight:200;max-width:48ch;margin:26px 0 40px;color:#f2e6df}
+.acciones{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:76px}
+.boton{
+  display:inline-block;text-decoration:none;font-size:15px;letter-spacing:.05em;font-weight:400;
+  padding:13px 26px;border:1.5px solid var(--dorado);color:var(--dorado);
+}
+.boton:hover,.boton:focus-visible{background:var(--dorado);color:var(--vino-hondo)}
+.boton.lleno{background:var(--dorado);color:var(--vino-hondo);font-weight:500}
+.boton.lleno:hover{background:#dcb75f}
+
+/* ---------- franja de datos (elemento firma) ---------- */
+.franja{
+  position:relative;background:rgba(255,255,255,.06);
+  border-top:1px solid rgba(201,162,75,.5);backdrop-filter:blur(2px);
+}
+.franja .env{padding:0}
+.franja-cab{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;
+  padding:16px 0 10px;font-size:13px;color:#e8d9c8;font-weight:200;
+}
+.franja-cab strong{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:.06em;color:#fff}
+.franja-cab em{font-style:normal;color:var(--dorado)}
+.deps{display:grid;grid-template-columns:repeat(9,1fr);border-left:1px solid rgba(255,255,255,.14)}
+.dep{
+  border-right:1px solid rgba(255,255,255,.14);border-top:1px solid rgba(255,255,255,.14);
+  padding:10px 6px 12px;text-align:center;
+}
+.dep b{display:block;font-family:'Bebas Neue',sans-serif;font-size:23px;font-weight:400;letter-spacing:.02em}
+.dep span{display:block;font-size:10.5px;letter-spacing:.12em;color:#cbb9a8;margin-top:2px}
+.dep.top{background:rgba(201,162,75,.17)}
+.dep.top b{color:var(--dorado)}
+.franja-pie{padding:11px 0 18px;font-size:12.5px;color:#c2ab9c;font-weight:200}
+
+/* ---------- secciones ---------- */
+section{padding:82px 0}
+.rotulo{
+  font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.24em;
+  color:var(--vino);margin-bottom:14px;
+}
+h2{font-size:clamp(34px,4.6vw,54px);margin-bottom:22px}
+.bajada{font-size:19px;font-weight:200;margin-bottom:0}
+.regla{height:2px;background:var(--dorado);width:64px;margin:0 0 30px}
+
+.pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin-top:52px;border-top:1px solid var(--linea)}
+.pilar{padding:28px 26px 30px;border-bottom:1px solid var(--linea);border-right:1px solid var(--linea)}
+.pilar:first-child{padding-left:0}
+.pilar h3{font-size:27px;color:var(--vino);margin-bottom:10px}
+.pilar p{margin:0;font-size:15.5px;line-height:1.62;color:#4a3c33}
+
+.medicion{background:var(--vino);color:#fff}
+.medicion .rotulo{color:var(--dorado)}
+.medicion .regla{background:var(--dorado)}
+.medicion p{color:#f0e2da;font-weight:200}
+.sistemas{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:46px;border:1px solid rgba(255,255,255,.2)}
+.sistema{padding:30px 28px}
+.sistema+.sistema{border-left:1px solid rgba(255,255,255,.2)}
+.sistema h3{font-size:30px;color:var(--dorado);margin-bottom:6px}
+.sistema .quien{font-size:13px;letter-spacing:.1em;color:#d8c3b4;margin:0 0 14px}
+.sistema p{font-size:15px;line-height:1.6;margin:0}
+
+/* ---------- catálogos ---------- */
+.catalogos{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:26px;margin-top:48px}
+.catalogo{background:#fff;border:1px solid var(--linea);display:flex;flex-direction:column}
+.catalogo .tapa{
+  aspect-ratio:3/4;background:linear-gradient(150deg,var(--vino) 0%,var(--vino-hondo) 100%);
+  color:#fff;padding:26px 22px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.catalogo .tapa .anio{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.86;color:var(--dorado)}
+.catalogo .tapa .que{font-family:'Bebas Neue',sans-serif;font-size:29px;letter-spacing:.03em}
+.catalogo .tapa .cuantos{font-size:13px;font-weight:200;color:#e4d0c4;margin-top:5px}
+.catalogo .cuerpo{padding:20px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
+.catalogo .cuerpo p{margin:0;font-size:15px;line-height:1.58;color:#4a3c33;flex:1}
+.catalogo .bajar{
+  align-self:flex-start;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.04em;
+  color:var(--vino);border-bottom:2px solid var(--dorado);padding-bottom:3px;
+}
+.catalogo .bajar:hover{color:var(--dorado)}
+.viejos{margin-top:34px;font-size:15px;color:var(--tierra)}
+.viejos a{color:var(--vino);text-underline-offset:3px}
+
+/* ---------- semen ---------- */
+.semen{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.padres{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:46px}
+.padre{border:1px solid var(--linea);display:flex;flex-direction:column}
+.padre .retrato{aspect-ratio:4/3;background:#e7e0d6 center/cover no-repeat}
+.padre .datos{padding:20px 22px 22px}
+.padre .rp{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.16em;color:var(--dorado)}
+.padre h3{font-size:26px;color:var(--vino);margin:2px 0 4px}
+.padre .hba{font-size:13px;color:var(--tierra);margin:0 0 14px}
+.mini{display:flex;gap:0;border:1px solid var(--linea);margin-bottom:14px}
+.mini div{flex:1;padding:9px 4px;text-align:center;border-right:1px solid var(--linea)}
+.mini div:last-child{border-right:0}
+.mini b{display:block;font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--tinta)}
+.mini span{display:block;font-size:10px;letter-spacing:.1em;color:var(--tierra)}
+.padre .consultar{
+  display:inline-block;text-decoration:none;font-size:14px;font-weight:500;
+  color:var(--vino);border-bottom:2px solid var(--dorado);padding-bottom:3px;
+}
+
+/* ---------- manejo ---------- */
+.manejo{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.manejo .texto{padding-right:56px}
+.manejo .imagen{background:#ded6ca center/cover no-repeat;min-height:400px;background-image:url('img/IMG_1744.webp')}
+
+/* ---------- contacto ---------- */
+.contacto{background:var(--vino-hondo);color:#fff}
+.contacto h2{color:#fff}
+.contacto .regla{background:var(--dorado)}
+.datos-contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-top:44px}
+.dato .que{font-size:13px;letter-spacing:.14em;color:var(--dorado);margin-bottom:6px}
+.dato .valor{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.02em}
+.dato a{text-decoration:none;border-bottom:1px solid rgba(201,162,75,.5)}
+.dato a:hover{border-bottom-color:var(--dorado)}
+.dato .detalle{font-size:14px;font-weight:200;color:#d4bfb2;margin-top:4px}
+
+footer{background:#2A0810;color:#b39c8e;padding:30px 0;font-size:13.5px;font-weight:200}
+footer .env{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer a{color:#d4bfb2;text-decoration:none}
+footer a:hover{color:var(--dorado)}
+
+:focus-visible{outline:2px solid var(--dorado);outline-offset:3px}
+
+@media (max-width:860px){
+  .deps{grid-template-columns:repeat(5,1fr)}
+  .sistemas{grid-template-columns:1fr}
+  .sistema+.sistema{border-left:0;border-top:1px solid rgba(255,255,255,.2)}
+  .manejo{grid-template-columns:1fr}
+  .manejo .texto{padding-right:0;padding-bottom:38px}
+  .pilar:first-child{padding-left:26px}
+  .nav{display:none}
+  .portada .env{padding-top:56px}
+  .acciones{margin-bottom:52px}
+  section{padding:58px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="barra">
+  <div class="env">
+    <a class="marca" href="/">
+      <img src="img/logo-amakaik.png" alt="" onerror="this.remove()">
+      <span>Amakaik</span>
+    </a>
+    <nav class="nav">
+      <a href="#cabana">La cabaña</a>
+      <a href="#medicion">Medición</a>
+      <a href="#catalogos">Catálogos</a>
+      <a href="#semen">Semen</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="wsp" href="https://wa.me/5491133043426">WhatsApp</a>
+  </div>
+</header>
+
+<div class="portada">
+  <div class="foto"></div>
+  <div class="env">
+    <h1>Angus que se mide, no que se promete</h1>
+    <p class="entrada">Puro de pedigrí criado 100% a pasto en los bañados del Salado. Cada animal del rodeo entra a Breedplan y a E.R.A., machos y hembras por igual.</p>
+    <div class="acciones">
+      <a class="boton lleno" href="#catalogos">Ver catálogos</a>
+      <a class="boton" href="#semen">Semen de nuestros padres</a>
+    </div>
+  </div>
+
+  <div class="franja">
+    <div class="env">
+      <div class="franja-cab">
+        <strong>RP 108</strong>
+        <span>Amakaik 108 Realico Profitbuil · colorado · nac. 27/08/2024</span>
+        <em>Índice Pampas +$54</em>
+      </div>
+      <div class="deps">
+        <div class="dep"><b>+1.9</b><span>DIR</span></div>
+        <div class="dep"><b>-1.2</b><span>LG</span></div>
+        <div class="dep"><b>+0.4</b><span>PN</span></div>
+        <div class="dep top"><b>+33</b><span>200</span></div>
+        <div class="dep top"><b>+52</b><span>400</span></div>
+        <div class="dep top"><b>+84</b><span>600</span></div>
+        <div class="dep top"><b>+2.8</b><span>CE</span></div>
+        <div class="dep top"><b>+62</b><span>PESO RES</span></div>
+        <div class="dep top"><b>+1.4</b><span>MARB</span></div>
+      </div>
+      <p class="franja-pie">Evaluación Breedplan Angus Argentino, agosto 2026. En dorado, las características donde el animal entra al 20% superior de la raza.</p>
+    </div>
+  </div>
+</div>
+
+<section id="cabana">
+  <div class="env">
+    <p class="rotulo">La cabaña</p>
+    <h2>Diez años criando en un<br>ambiente que no perdona</h2>
+    <div class="regla"></div>
+    <div class="medida">
+      <p class="bajada">Amakaik es una cabaña familiar de la cuenca del río Salado, en Gorchs, General Belgrano. Nació del sueño de dos hermanos que se criaron en el campo y quisieron convertir su pasión por la genética en un rodeo seleccionado por eficiencia productiva y rentabilidad.</p>
+      <p>Trabajamos en una zona inundable, de agua salada y sin sombra. Estamos convencidos de que ese ambiente hostil transformó al rodeo en una máquina de producir animales adaptados. Criamos 100% a pasto, sin suplementación de ningún tipo, y solo mantenemos las madres que se preñan todos los años en los primeros ciclos y destetan un ternero razonable en peso y tamaño. El resto se descarta.</p>
+      <p><em>Amakaik</em> significa <em>que tiene vida y fuego</em>.</p>
+    </div>
+
+    <div class="pilares">
+      <div class="pilar">
+        <h3>Precocidad</h3>
+        <p>Hembras que llegan al servicio de 15 meses y machos que trabajan temprano. Animales que muestran su fertilidad en el fenotipo y en la acción.</p>
+      </div>
+      <div class="pilar">
+        <h3>Potencial</h3>
+        <p>Bajo peso al nacer, y después rompen la curva de crecimiento. Carcasa premium, fácil terminación y buen rinde al gancho.</p>
+      </div>
+      <div class="pilar">
+        <h3>Fertilidad</h3>
+        <p>Un ternero por año más allá de las condiciones. Una vaca que se preña de 15 meses y no falla nunca es la mayor ganancia de un criador.</p>
+      </div>
+      <div class="pilar">
+        <h3>Rusticidad</h3>
+        <p>Producidos a pasto en el bañado, aguantando seca, inundación y calor. Sin eso, lo anterior no sirve de nada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="medicion" id="medicion">
+  <div class="env">
+    <p class="rotulo">Medición</p>
+    <h2>Sin datos no hay progreso genético</h2>
+    <div class="regla"></div>
+    <div class="medida">
+      <p>Pesamos e identificamos a cada ternero al nacer y lo seguimos mes a mes. A los 205 días promedio destetamos y pesamos. En octubre viene la pesada de 400 y doscientos días después la de 600. Medimos circunferencia escrotal, hacemos ecografía de carcasa y análisis de mansedumbre.</p>
+      <p>Medimos y evaluamos a todos los animales por igual, machos y hembras. Así se evitan los sesgos que aparecen cuando se analiza solo una parte del rodeo.</p>
+    </div>
+    <div class="sistemas">
+      <div class="sistema">
+        <h3>Breedplan</h3>
+        <p class="quien">ABRI, Australia · grupo Angus Argentino · EBV</p>
+        <p>Compara nuestro rodeo con el de las demás cabañas del grupo. Los EBV expresan el 100% de lo que cada progenitor transmite.</p>
+      </div>
+      <div class="sistema">
+        <h3>E.R.A. AnGus</h3>
+        <p class="quien">INTA y Asociación Argentina de Angus · DEP</p>
+        <p>Los DEP expresan el 50% que hereda cada hijo. Un DEP es la mitad de un EBV: no son cifras comparables entre sí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="catalogos">
+  <div class="env">
+    <p class="rotulo">Catálogos anuales</p>
+    <h2>Toda la información,<br>antes de que preguntes</h2>
+    <div class="regla"></div>
+    <p class="bajada medida">Cada catálogo trae la ficha completa de cada animal: los 18 EBV de Breedplan con precisión y percentil, los datos productivos y tres generaciones de sangre.</p>
+
+    <div class="catalogos">
+      <div class="catalogo">
+        <div class="tapa">
+          <div class="que">Toros PP</div>
+          <div>
+            <div class="anio">2026</div>
+            <div class="cuantos">18 toros nacidos en 2024</div>
+          </div>
+        </div>
+        <div class="cuerpo">
+          <p>Ficha por animal con Breedplan completo, Índice Pampas, pesos de nacer, destete, año y actual, GDP, circunferencia escrotal y pedigrí de tres generaciones.</p>
+          <a class="bajar" href="catalogos/toros-pp-2026.pdf">Descargar PDF</a>
+        </div>
+      </div>
+
+      <div class="catalogo">
+        <div class="tapa">
+          <div class="que">Vaquillonas</div>
+          <div>
+            <div class="anio">2026</div>
+            <div class="cuantos">122 vaquillonas, lote rojo</div>
+          </div>
+        </div>
+        <div class="cuerpo">
+          <p>Las 122 vaquillonas del lote con su diagnóstico de preñez, toro de preñez resuelto y fecha probable de parto. Cuarenta y cinco preñadas por IATF y setenta y siete por repaso.</p>
+          <a class="bajar" href="catalogos/vaquillonas-2026.pdf">Descargar PDF</a>
+        </div>
+      </div>
+
+      <div class="catalogo">
+        <div class="tapa">
+          <div class="que">Catálogo general</div>
+          <div>
+            <div class="anio">2023</div>
+            <div class="cuantos">Edición anterior</div>
+          </div>
+        </div>
+        <div class="cuerpo">
+          <p>El catálogo publicado en el sitio anterior. Queda disponible como archivo de consulta.</p>
+          <a class="bajar" href="catalogos/catalogo-2023.pdf">Descargar PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="viejos">¿Buscás una ficha suelta de un animal? Escribinos el RP por <a href="https://wa.me/5491133043426">WhatsApp</a> y te la mandamos.</p>
+  </div>
+</section>
+
+<section class="semen" id="semen">
+  <div class="env">
+    <p class="rotulo">Catálogo de semen</p>
+    <h2>Nuestros toros padres</h2>
+    <div class="regla"></div>
+    <p class="bajada medida">Todos seleccionados y probados a campo en el mismo ambiente donde criamos. Hay opciones para vaquillonas y para vacas, según lo que necesite tu rodeo.</p>
+
+    <div class="padres">
+      <div class="padre">
+        <div class="retrato" style="background-image:url('img/IVAR.webp')"></div>
+        <div class="datos">
+          <div class="rp">RP 38</div>
+          <h3>Amakaik 38</h3>
+          <p class="hba">AMK21038 · toro de repaso del plantel</p>
+          <div class="mini">
+            <div><b>—</b><span>PN</span></div>
+            <div><b>—</b><span>600</span></div>
+            <div><b>—</b><span>CE</span></div>
+            <div><b>—</b><span>IP$</span></div>
+          </div>
+          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+        </div>
+      </div>
+
+      <div class="padre">
+        <div class="retrato" style="background-image:url('img/IVAR-2.webp')"></div>
+        <div class="datos">
+          <div class="rp">RP 78</div>
+          <h3>Amakaik 78</h3>
+          <p class="hba">AMK23078 · toro de repaso del plantel</p>
+          <div class="mini">
+            <div><b>—</b><span>PN</span></div>
+            <div><b>—</b><span>600</span></div>
+            <div><b>—</b><span>CE</span></div>
+            <div><b>—</b><span>IP$</span></div>
+          </div>
+          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+        </div>
+      </div>
+
+      <div class="padre">
+        <div class="retrato" style="background-image:url('img/toro-B760C8E5.webp')"></div>
+        <div class="datos">
+          <div class="rp">RP 82</div>
+          <h3>Amakaik 82</h3>
+          <p class="hba">AMK23082 · toro de repaso del plantel</p>
+          <div class="mini">
+            <div><b>—</b><span>PN</span></div>
+            <div><b>—</b><span>600</span></div>
+            <div><b>—</b><span>CE</span></div>
+            <div><b>—</b><span>IP$</span></div>
+          </div>
+          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+        </div>
+      </div>
+
+      <div class="padre">
+        <div class="retrato" style="background-image:url('img/IMG_2840.webp')"></div>
+        <div class="datos">
+          <div class="rp">RP N002</div>
+          <h3>Amakaik N002</h3>
+          <p class="hba">AMK23N002 · toro de repaso del plantel</p>
+          <div class="mini">
+            <div><b>—</b><span>PN</span></div>
+            <div><b>—</b><span>600</span></div>
+            <div><b>—</b><span>CE</span></div>
+            <div><b>—</b><span>IP$</span></div>
+          </div>
+          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="viejos">También producimos embriones a medida: tenemos combinaciones ya confeccionadas de nuestras donantes, o las cruzamos con el toro que elijas.</p>
+  </div>
+</section>
+
+<section>
+  <div class="env manejo">
+    <div class="texto">
+      <p class="rotulo">Manejo</p>
+      <h2>Cría y recría</h2>
+      <div class="regla"></div>
+      <p>Las vacas se manejan sobre pastos naturales en forma rotativa, sin quedarse más de cinco días en un lote. Promocionamos ryegrass y lotus tenuis, y rediseñamos aguadas y eléctricos para sostener el sistema. Terminamos con el sobrepastoreo y las especies naturales volvieron.</p>
+      <p>Vacas con cría al pie y vaquillonas de primer y segundo servicio se inseminan el 1 de noviembre. El repaso va con toros propios, y todos los años se suman nuevos para probar. La IATF de las vaquillonas usa toros de bajo peso al nacer, para asegurar ultra facilidad de parto a los 15 meses.</p>
+      <p>Después del tacto se van las vacías y las que no dieron ternero al destete. Presión selectiva sin fin.</p>
+    </div>
+    <div class="imagen" role="img" aria-label="Rodeo en el campo de Gorchs"></div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="env">
+    <p class="rotulo">Contacto</p>
+    <h2>Vení a ver los lotes</h2>
+    <div class="regla"></div>
+    <p class="medida">Coordinamos la visita cuando te quede cómodo. Contanos qué necesita tu rodeo y vemos juntos qué animales te sirven.</p>
+    <div class="datos-contacto">
+      <div class="dato">
+        <p class="que">WhatsApp</p>
+        <p class="valor"><a href="https://wa.me/5491133043426">+54 9 11 3304 3426</a></p>
+        <p class="detalle">La vía más rápida</p>
+      </div>
+      <div class="dato">
+        <p class="que">Correo</p>
+        <p class="valor"><a href="mailto:info@amakaik.com">info@amakaik.com</a></p>
+        <p class="detalle">Consultas y catálogos</p>
+      </div>
+      <div class="dato">
+        <p class="que">Campo</p>
+        <p class="valor">Gorchs</p>
+        <p class="detalle">General Belgrano, Buenos Aires</p>
+      </div>
+      <div class="dato">
+        <p class="que">Instagram</p>
+        <p class="valor"><a href="https://instagram.com/angusamakaik">@angusamakaik</a></p>
+        <p class="detalle">Fechas de remates</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="env">
+    <span>Cabaña Amakaik · Aberdeen Angus · Gorchs, General Belgrano, Buenos Aires</span>
+    <span><a href="https://wa.me/5491133043426">WhatsApp</a> · <a href="mailto:info@amakaik.com">info@amakaik.com</a> · <a href="https://instagram.com/angusamakaik">Instagram</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
