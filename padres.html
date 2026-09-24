@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toros padres y catálogo de semen · Cabaña Amakaik</title>
+<meta name="description" content="Los toros padres de Cabaña Amakaik, con evaluación BREEDPLAN y E.R.A. completa. Semen y embriones de Aberdeen Angus criado 100% a pasto en la cuenca del Salado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blanco:#FFFFFF;--hueso:#F7F4F1;--negro:#111010;--gris:#6E6763;
+  --rojo:#9A1828;--rojo-claro:#B8283C;--oro:#FBF3DF;--oro-borde:#E2C67E;
+  --linea:rgba(17,16,16,.11);
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+  --r-chico:10px;--r:14px;--r-grande:20px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--blanco);color:var(--negro);font-family:var(--sans);font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:500;letter-spacing:-.03em;line-height:1.1;margin:0}
+.env{width:min(1240px,90vw);margin-inline:auto}
+:focus-visible{outline:2px solid var(--rojo);outline-offset:3px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;border:1px solid transparent;transition:background .18s}
+.btn-negro{background:var(--negro);color:#fff}.btn-negro:hover{background:#2c2828}
+.btn-linea{border-color:var(--linea);color:var(--negro);background:var(--blanco)}.btn-linea:hover{background:var(--hueso)}
+.rotulo{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin:0 0 16px}
+
+.cabecera{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.cabecera .env{display:flex;align-items:center;gap:26px;min-height:78px}
+.logo img{height:46px;width:auto}
+.menu{display:flex;gap:30px;margin-inline:auto;font-size:15.5px;font-weight:500}
+.menu a{text-decoration:none;opacity:.82}.menu a:hover,.menu a.aqui{opacity:1;color:var(--rojo)}
+.cabecera .btn{padding:11px 22px;font-size:14.5px}
+
+.tapa{padding:72px 0 56px;border-bottom:1px solid var(--linea)}
+.tapa h1{font-size:clamp(34px,4.6vw,56px);max-width:16ch}
+.tapa p{color:var(--gris);max-width:58ch;margin:20px 0 0;font-size:17.5px}
+
+.toros{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;padding:56px 0 96px}
+.toro{border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;background:var(--blanco);display:flex;flex-direction:column;text-decoration:none;transition:border-color .18s}
+.toro:hover{border-color:var(--rojo)}
+.toro .foto{aspect-ratio:4/3;background:var(--hueso) center/cover no-repeat}
+.toro .txt{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.toro .rp{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);margin:0}
+.toro h2{font-size:22px;margin:7px 0 4px}
+.toro .hba{font-family:var(--mono);font-size:11px;color:var(--gris);margin:0 0 18px;letter-spacing:.05em}
+.ip{display:inline-flex;align-items:baseline;gap:9px;background:var(--oro);border:1px solid var(--oro-borde);border-radius:999px;padding:6px 15px;margin-bottom:18px;align-self:flex-start}
+.ip span{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#8a6d22}
+.ip b{font-size:16px;font-weight:600;letter-spacing:-.02em}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--linea);border-radius:var(--r-chico);overflow:hidden;margin-bottom:20px}
+.mini div{padding:11px 5px;text-align:center;border-right:1px solid var(--linea);background:var(--hueso)}
+.mini div:last-child{border-right:0}
+.mini b{display:block;font-size:17px;font-weight:600;letter-spacing:-.02em}
+.mini span{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-top:3px}
+.ver{margin-top:auto;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo)}
+
+.vacio{border:1px dashed var(--linea);border-radius:var(--r);padding:44px 30px;background:var(--hueso);color:var(--gris);text-align:center}
+
+.llamada{padding:0 0 96px}
+.llamada .caja{background:var(--negro);color:#fff;border-radius:var(--r-grande);padding:64px 56px;display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.llamada h2{color:#fff;font-size:clamp(26px,3.2vw,38px);max-width:17ch}
+.llamada p{color:#b8b0ab;margin:16px 0 0;max-width:44ch}
+.llamada .btn{background:#fff;color:var(--negro);text-align:center}
+
+footer{background:var(--hueso);padding:44px 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+
+@media (max-width:980px){
+  .menu{display:none}
+  .llamada .caja{grid-template-columns:1fr;padding:44px 28px}
+  .tapa{padding:48px 0 40px}
+}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="env">
+    <a class="logo" href="index.html"><img src="img/logo-amakaik.png" alt="Cabaña Amakaik"></a>
+    <nav class="menu">
+      <a href="index.html#cabana">La cabaña</a>
+      <a href="index.html#genetica">Genética</a>
+      <a href="index.html#catalogos">Catálogos</a>
+      <a class="aqui" href="padres.html">Toros padres</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-negro" href="https://wa.me/5491133043426">Consultar semen</a>
+  </div>
+</header>
+
+<div class="tapa">
+  <div class="env">
+    <p class="rotulo">Catálogo de semen</p>
+    <h1>Los toros padres de la cabaña</h1>
+    <p>Todos seleccionados y probados a campo, en el mismo ambiente donde criamos: bañado, agua salada y 100% a pasto. Entrá a cada uno para ver la evaluación BREEDPLAN completa, los DEP de E.R.A., la genealogía y los datos productivos.</p>
+  </div>
+</div>
+
+<div class="env">
+  <div class="toros">
+
+    <a class="toro" href="toro-hercules.html">
+      <div class="foto" style="background-image:url('img/toros/hercules-1.webp')"></div>
+      <div class="txt">
+        <p class="rp">RP B332</p>
+        <h2>Hércules</h2>
+        <p class="hba">Casamú B332 Profitbuilder Eñun · HBA 856164</p>
+        <span class="ip"><span>Índice Pampas</span><b>+$55</b></span>
+        <div class="mini">
+          <div><b>+107</b><span>600 d</span></div>
+          <div><b>+63</b><span>Res</span></div>
+          <div><b>+3.8</b><span>CE</span></div>
+          <div><b>+3.7</b><span>AOB</span></div>
+        </div>
+        <span class="ver">Ver ficha completa</span>
+      </div>
+    </a>
+
+    <a class="toro" href="toro-zeus-ii.html">
+      <div class="foto" style="background-image:url('img/toros/zeus-ii-1.webp')"></div>
+      <div class="txt">
+        <p class="rp">RP 56</p>
+        <h2>Zeus II</h2>
+        <p class="hba">Amakaik 56 Zeus Nantué · HBA 880904</p>
+        <span class="ip"><span>Índice Pampas</span><b>+$49</b></span>
+        <div class="mini">
+          <div><b>+4.2</b><span>Fac. parto</span></div>
+          <div><b>-1.6</b><span>P. nacer</span></div>
+          <div><b>+72</b><span>600 d</span></div>
+          <div><b>+3.2</b><span>CE</span></div>
+        </div>
+        <span class="ver">Ver ficha completa</span>
+      </div>
+    </a>
+
+    <div class="toro">
+      <div class="foto"></div>
+      <div class="txt">
+        <p class="rp">Próximamente</p>
+        <h2>Resto del plantel</h2>
+        <p class="hba">Fichas en preparación</p>
+        <div class="vacio">Cada toro padre va a tener su página igual que la del RP 108, con BREEDPLAN, E.R.A., genealogía y fotos.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="llamada">
+  <div class="env">
+    <div class="caja">
+      <div>
+        <h2>Semen, embriones o el toro entero</h2>
+        <p>Contanos qué necesita tu rodeo y te pasamos disponibilidad, condiciones y las combinaciones que mejor complementan tus vientres.</p>
+      </div>
+      <div>
+        <a class="btn" href="https://wa.me/5491133043426">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="env">Cabaña Amakaik · Aberdeen Angus · Gorchs, General Belgrano, Buenos Aires</div>
+</footer>
+
+</body>
+</html>

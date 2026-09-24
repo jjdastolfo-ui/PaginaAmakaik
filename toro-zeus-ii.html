@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeus II — Amakaik 56 Zeus Nantué · Toro padre · Cabaña Amakaik</title>
+<meta name="description" content="Zeus II · RP 56 · HBA 880904. Toro padre Aberdeen Angus de Cabaña Amakaik. Facilidad de parto +4.2, peso al nacer -1.6, Índice Pampas +$49. Toro de vaquillonas con BREEDPLAN completo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blanco:#FFFFFF;--hueso:#F7F4F1;--negro:#111010;--gris:#6E6763;
+  --rojo:#9A1828;--rojo-claro:#B8283C;--oro:#FBF3DF;--oro-borde:#E2C67E;--oro-texto:#7A5E12;
+  --linea:rgba(17,16,16,.11);
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+  --r-chico:10px;--r:14px;--r-grande:20px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--blanco);color:var(--negro);font-family:var(--sans);font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:500;letter-spacing:-.03em;line-height:1.1;margin:0}
+.env{width:min(1240px,90vw);margin-inline:auto}
+:focus-visible{outline:2px solid var(--rojo);outline-offset:3px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:13px 26px;border-radius:999px;border:1px solid transparent;transition:background .18s}
+.btn-negro{background:var(--negro);color:#fff}.btn-negro:hover{background:#2c2828}
+.btn-rojo{background:var(--rojo);color:#fff}.btn-rojo:hover{background:var(--rojo-claro)}
+.btn-linea{border-color:var(--linea);color:var(--negro);background:var(--blanco)}.btn-linea:hover{background:var(--hueso)}
+.rotulo{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin:0 0 16px}
+
+.cabecera{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.cabecera .env{display:flex;align-items:center;gap:26px;min-height:78px}
+.logo img{height:46px;width:auto}
+.menu{display:flex;gap:30px;margin-inline:auto;font-size:15.5px;font-weight:500}
+.menu a{text-decoration:none;opacity:.82}.menu a:hover,.menu a.aqui{opacity:1;color:var(--rojo)}
+.cabecera .btn{padding:11px 22px;font-size:14.5px}
+
+.miga{padding:28px 0 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gris)}
+.miga a{text-decoration:none}.miga a:hover{color:var(--rojo)}
+
+.ficha{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;padding:32px 0 88px;align-items:start}
+.galeria .principal{border-radius:var(--r-grande);overflow:hidden;aspect-ratio:4/3;background:var(--hueso) center/cover no-repeat}
+.miniaturas{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.miniaturas button{all:unset;cursor:pointer;border-radius:var(--r-chico);overflow:hidden;aspect-ratio:4/3;background:var(--hueso) center/cover no-repeat;border:2px solid transparent}
+.miniaturas button[aria-current="true"]{border-color:var(--rojo)}
+
+.identidad .rp{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin:0}
+.identidad h1{font-size:clamp(38px,4.6vw,56px);margin:10px 0 0}
+.identidad .registrado{font-size:19px;color:var(--gris);margin:8px 0 0;letter-spacing:-.01em}
+.identidad .sub{font-family:var(--mono);font-size:12.5px;color:var(--gris);margin:14px 0 0;letter-spacing:.06em}
+.indice{margin-top:28px;border:1px solid var(--oro-borde);background:var(--oro);border-radius:var(--r);padding:22px 26px;display:flex;align-items:baseline;gap:16px}
+.indice span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a6d22}
+.indice b{font-size:36px;font-weight:600;letter-spacing:-.03em}
+.indice small{font-size:13px;color:var(--gris);margin-left:auto;text-align:right;line-height:1.4}
+.datos{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;margin-top:20px}
+.datos div{padding:16px 18px;border-right:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.datos div:nth-child(3n){border-right:0}
+.datos div:nth-last-child(-n+3){border-bottom:0}
+.datos span{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
+.datos b{display:block;font-size:17px;font-weight:600;margin-top:4px;letter-spacing:-.01em}
+.acciones{display:flex;flex-wrap:wrap;gap:11px;margin-top:26px}
+
+section{padding:0 0 88px}
+h2{font-size:clamp(24px,2.8vw,32px)}
+.aclara{color:var(--gris);font-size:15px;margin:10px 0 0;max-width:66ch}
+
+.resumen{border:1px solid var(--linea);border-left:3px solid var(--rojo);border-radius:var(--r);padding:28px 30px;margin-top:30px;background:var(--hueso)}
+.resumen p{margin:0 0 12px}
+.resumen p:last-child{margin-bottom:0}
+.resumen strong{font-weight:600}
+
+.grupos{display:grid;gap:18px;margin-top:34px}
+.grupo{border:1px solid var(--linea);border-radius:var(--r);overflow:hidden}
+.grupo>h3{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gris);background:var(--hueso);padding:13px 20px;font-weight:500;border-bottom:1px solid var(--linea)}
+.traits{display:grid;grid-template-columns:repeat(auto-fit,minmax(152px,1fr))}
+.trait{padding:18px 20px 20px;border-right:1px solid var(--linea)}
+.trait:last-child{border-right:0}
+.trait.top{background:var(--oro)}
+.trait .n{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--gris);margin:0}
+.trait .v{font-size:27px;font-weight:600;letter-spacing:-.03em;line-height:1.2;margin:3px 0 0}
+.trait.top .v{color:var(--oro-texto)}
+.trait .m{font-family:var(--mono);font-size:10.5px;color:var(--gris);margin:5px 0 0;line-height:1.7}
+.trait .m em{font-style:normal;color:var(--negro);font-weight:500}
+
+.leyenda{display:flex;flex-wrap:wrap;gap:22px;margin-top:22px;font-size:13.5px;color:var(--gris)}
+.leyenda i{display:inline-block;width:13px;height:13px;border-radius:4px;background:var(--oro);border:1px solid var(--oro-borde);vertical-align:-2px;margin-right:7px}
+
+.pendiente{border:1px dashed var(--linea);border-radius:var(--r);padding:30px 26px;margin-top:30px;color:var(--gris);background:var(--hueso)}
+
+.arbol{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;margin-top:34px;font-size:14.5px}
+.arbol>div{border-right:1px solid var(--linea)}
+.arbol>div:last-child{border-right:0}
+.arbol h4{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);font-weight:500;margin:0;padding:13px 18px;background:var(--hueso);border-bottom:1px solid var(--linea)}
+.arbol .a{padding:14px 18px;border-bottom:1px solid var(--linea)}
+.arbol .a:last-child{border-bottom:0}
+.arbol .a b{display:block;font-weight:600;letter-spacing:-.01em}
+.arbol .a span{display:block;font-family:var(--mono);font-size:10.5px;color:var(--gris);margin-top:2px}
+
+.llamada{padding:0 0 96px}
+.llamada .caja{background:var(--negro);color:#fff;border-radius:var(--r-grande);padding:64px 56px;display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+.llamada h2{color:#fff;max-width:17ch}
+.llamada p{color:#b8b0ab;margin:16px 0 0;max-width:44ch}
+.llamada .botones{display:flex;flex-direction:column;gap:11px}
+.llamada .btn{text-align:center;background:#fff;color:var(--negro)}
+.llamada .btn.ghost{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
+
+footer{background:var(--hueso);padding:44px 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);line-height:2}
+
+@media (max-width:980px){
+  .menu{display:none}
+  .ficha{grid-template-columns:1fr;gap:34px;padding-bottom:56px}
+  .datos{grid-template-columns:repeat(2,1fr)}
+  .datos div:nth-child(3n){border-right:1px solid var(--linea)}
+  .datos div:nth-child(2n){border-right:0}
+  .arbol{grid-template-columns:1fr}
+  .arbol>div{border-right:0;border-bottom:1px solid var(--linea)}
+  .llamada .caja{grid-template-columns:1fr;padding:44px 28px}
+  .indice{flex-wrap:wrap}
+  .indice small{margin-left:0;text-align:left;width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="env">
+    <a class="logo" href="index.html"><img src="img/logo-amakaik.png" alt="Cabaña Amakaik"></a>
+    <nav class="menu">
+      <a href="index.html#cabana">La cabaña</a>
+      <a href="index.html#genetica">Genética</a>
+      <a href="index.html#catalogos">Catálogos</a>
+      <a class="aqui" href="padres.html">Toros padres</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-negro" href="https://wa.me/5491133043426">Consultar semen</a>
+  </div>
+</header>
+
+<div class="env">
+  <p class="miga"><a href="index.html">Inicio</a> · <a href="padres.html">Toros padres</a> · Zeus II</p>
+
+  <div class="ficha">
+    <div class="galeria">
+      <div class="principal" id="fotoGrande" style="background-image:url('img/toros/zeus-ii-1.webp')" role="img" aria-label="Zeus II, Amakaik 56 Zeus Nantué"></div>
+      <div class="miniaturas" id="mini">
+        <button aria-current="true" data-src="img/toros/zeus-ii-1.webp" style="background-image:url('img/toros/zeus-ii-1.webp')" aria-label="Foto 1"></button>
+        <button data-src="img/toros/zeus-ii-2.webp" style="background-image:url('img/toros/zeus-ii-2.webp')" aria-label="Foto 2"></button>
+        <button data-src="img/toros/zeus-ii-3.webp" style="background-image:url('img/toros/zeus-ii-3.webp')" aria-label="Foto 3"></button>
+        <button data-src="img/toros/zeus-ii-4.webp" style="background-image:url('img/toros/zeus-ii-4.webp')" aria-label="Foto 4"></button>
+      </div>
+    </div>
+
+    <div class="identidad">
+      <p class="rp">RP 56 · Toro padre</p>
+      <h1>Zeus II</h1>
+      <p class="registrado">Amakaik 56 Zeus Nantué</p>
+      <p class="sub">HBA 880904 · AMK21056 · Tatuaje 21056</p>
+
+      <div class="indice">
+        <div>
+          <span>Índice Pampas</span>
+          <b>+$49</b>
+        </div>
+        <small>Promedio de la raza: +$38</small>
+      </div>
+
+      <div class="datos">
+        <div><span>Nacimiento</span><b>25.08.2021</b></div>
+        <div><span>Pelo</span><b>Negro</b></div>
+        <div><span>Categoría</span><b>Puro de pedigrí</b></div>
+        <div><span>Criador</span><b>Cabaña Amakaik</b></div>
+        <div><span>Hijos registrados</span><b>16</b></div>
+        <div><span>Estado</span><b>En servicio</b></div>
+      </div>
+
+      <div class="acciones">
+        <a class="btn btn-rojo" href="https://wa.me/5491133043426">Consultar dosis de semen</a>
+        <a class="btn btn-linea" href="https://wa.me/5491133043426">Consultar embriones</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="env">
+    <p class="rotulo">Para qué sirve</p>
+    <h2>El toro de vaquillonas, con crecimiento atrás</h2>
+    <div class="resumen">
+      <p><strong>Para servicio de 15 meses.</strong> Facilidad de parto +4,2 contra +1,6 de promedio de raza, peso al nacer -1,6 contra +0,7, y gestación -3,0 contra -1,9. Ternero chico, gestación corta y parto fácil: las tres cosas que una vaquillona necesita.</p>
+      <p><strong>Y no paga el crecimiento.</strong> Es lo difícil de conseguir. A pesar del bajo peso al nacer, llega a +72 kg a los 600 días contra +58 de promedio, con peso de res +50 contra +39. Rompe la curva después de nacer, que es exactamente lo que buscamos en la cabaña.</p>
+      <p><strong>Fertilidad y terminación.</strong> Circunferencia escrotal +3,2 contra +1,5, y días al parto -2,5 contra -1,7: hijas que se preñan temprano. Engrasa bien, con dorsal +1,9 y cadera +2,7, y marmoleo +0,6 contra +0,3.</p>
+      <p><strong>A tener en cuenta.</strong> La docilidad es baja, -19 contra +2 de promedio. Los datos son sólidos: quince hijos analizados y ocho escaneados, con precisiones de 75 a 84% en los pesos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="env">
+    <p class="rotulo">Evaluación genética</p>
+    <h2>BREEDPLAN · Angus Argentino</h2>
+    <p class="aclara">Corrida de septiembre de 2026. Los EBV expresan el 100% de lo que el progenitor transmite. Debajo de cada valor, la precisión del dato y el promedio de la raza para terneros nacidos en 2024.</p>
+
+    <div class="grupos">
+      <div class="grupo">
+        <h3>Nacimiento</h3>
+        <div class="traits">
+          <div class="trait top"><p class="n">Fac. parto DIR</p><p class="v">+4.2</p><p class="m">Prec. <em>46%</em> · Media +1.6</p></div>
+          <div class="trait top"><p class="n">Fac. parto hijas</p><p class="v">+1.2</p><p class="m">Prec. <em>32%</em> · Media +0.8</p></div>
+          <div class="trait top"><p class="n">Gestación</p><p class="v">-3.0</p><p class="m">Prec. <em>49%</em> · Media -1.9</p></div>
+          <div class="trait top"><p class="n">Peso al nacer</p><p class="v">-1.6</p><p class="m">Prec. <em>84%</em> · Media +0.7</p></div>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <h3>Crecimiento</h3>
+        <div class="traits">
+          <div class="trait"><p class="n">200 días</p><p class="v">+23</p><p class="m">Prec. <em>76%</em> · Media +25</p></div>
+          <div class="trait top"><p class="n">400 días</p><p class="v">+44</p><p class="m">Prec. <em>75%</em> · Media +36</p></div>
+          <div class="trait top"><p class="n">600 días</p><p class="v">+72</p><p class="m">Prec. <em>80%</em> · Media +58</p></div>
+          <div class="trait top"><p class="n">Peso vaca adulta</p><p class="v">+55</p><p class="m">Prec. <em>72%</em> · Media +45</p></div>
+          <div class="trait top"><p class="n">Leche</p><p class="v">+11</p><p class="m">Prec. <em>40%</em> · Media +8</p></div>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <h3>Fertilidad</h3>
+        <div class="traits">
+          <div class="trait top"><p class="n">Circ. escrotal</p><p class="v">+3.2</p><p class="m">Prec. <em>77%</em> · Media +1.5</p></div>
+          <div class="trait top"><p class="n">Días al parto</p><p class="v">-2.5</p><p class="m">Prec. <em>34%</em> · Media -1.7</p></div>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <h3>Carcasa</h3>
+        <div class="traits">
+          <div class="trait top"><p class="n">Peso de res</p><p class="v">+50</p><p class="m">Prec. <em>67%</em> · Media +39</p></div>
+          <div class="trait top"><p class="n">Área ojo de bife</p><p class="v">+3.6</p><p class="m">Prec. <em>51%</em> · Media +2.9</p></div>
+          <div class="trait top"><p class="n">Grasa dorsal</p><p class="v">+1.9</p><p class="m">Prec. <em>66%</em> · Media +0.5</p></div>
+          <div class="trait top"><p class="n">Grasa de cadera</p><p class="v">+2.7</p><p class="m">Prec. <em>61%</em> · Media +0.6</p></div>
+          <div class="trait"><p class="n">Rendimiento</p><p class="v">0.0</p><p class="m">Prec. <em>53%</em> · Media +0.9</p></div>
+          <div class="trait top"><p class="n">Marmoleo</p><p class="v">+0.6</p><p class="m">Prec. <em>48%</em> · Media +0.3</p></div>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <h3>Temperamento e índice</h3>
+        <div class="traits">
+          <div class="trait"><p class="n">Docilidad</p><p class="v">-19</p><p class="m">Prec. <em>61%</em> · Media +2</p></div>
+          <div class="trait top"><p class="n">Índice Pampas</p><p class="v">+$49</p><p class="m">Media +$38</p></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="leyenda"><span><i></i>Casilla dorada: por encima del promedio de la raza</span><span>Características observadas: BWT, 200WT, 400WT, 600WT, SS, FAT, EMA, IMF, DOC</span></p>
+  </div>
+</section>
+
+<section>
+  <div class="env">
+    <p class="rotulo">Segunda evaluación</p>
+    <h2>E.R.A. AnGus · DEP enriquecidos por genómica</h2>
+    <p class="aclara">Los DEP expresan el 50% que hereda cada hijo, así que no son comparables con los EBV de BREEDPLAN.</p>
+    <div class="pendiente">Tabla en revisión. Los DEP de la corrida de junio de 2026 se publican apenas terminemos de verificarlos.</div>
+  </div>
+</section>
+
+<section>
+  <div class="env">
+    <p class="rotulo">Genealogía</p>
+    <h2>Sangre</h2>
+    <div class="arbol">
+      <div>
+        <h4>Padres</h4>
+        <div class="a"><b>Casamú 1472 Conquest Lihuén</b><span>RP 1472 · HBA 820642</span></div>
+        <div class="a"><b>Casamú B643 Nantué Eñun</b><span>RP B643 · HBA 851272</span></div>
+      </div>
+      <div>
+        <h4>Abuelos</h4>
+        <div class="a"><b>HXC Conquest 4405P</b><span>R.A.A.A. 387580</span></div>
+        <div class="a"><b>Casamú 09391 Lihuén Larkaba 5687</b><span>RP 5622 · HBA 747441</span></div>
+        <div class="a"><b>Casamú 4104 Nantué</b><span>RP 1772 · HBA 809980</span></div>
+        <div class="a"><b>Casamú 3245 Eñun Conthia 519</b><span>RP 3245 · HBA 827678</span></div>
+      </div>
+      <div>
+        <h4>Bisabuelos</h4>
+        <div class="a"><b>Beckton Julian GG B571</b><span>R.A.A.A. 387580</span></div>
+        <div class="a"><b>HXC Ellie May MA638</b><span>R.A.A.A. 845501</span></div>
+        <div class="a"><b>Casamú 5622 Lihuén</b><span>RP 5622 · HBA 747441</span></div>
+        <div class="a"><b>Casamú 5687 Alca Alu Larkaba 3693</b><span>RP 5687 · HBA 744721</span></div>
+        <div class="a"><b>Casamú 1772 Lancuyén</b><span>RP 1772 · HBA 809980</span></div>
+        <div class="a"><b>Casamú 1239 Coirón Waltraute 8969</b><span>RP 1239 · HBA 803895</span></div>
+        <div class="a"><b>Casamú 772 Eñun</b><span>RP 772 · HBA 801500</span></div>
+        <div class="a"><b>Casamú 519 Catriel Cinthia 8793</b><span>RP 519 · HBA 796205</span></div>
+      </div>
+    </div>
+    <p class="aclara">Sangre Conquest Lihuén sobre madre Nantué Eñun. Criado en la cabaña. Progenie a la fecha: dieciséis hijos, once machos y cinco hembras.</p>
+  </div>
+</section>
+
+<div class="llamada">
+  <div class="env">
+    <div class="caja">
+      <div>
+        <h2>¿Servís vaquillonas de 15 meses?</h2>
+        <p>Zeus II está pensado para eso. Consultanos por dosis de semen o embriones y te pasamos disponibilidad y condiciones.</p>
+      </div>
+      <div class="botones">
+        <a class="btn" href="https://wa.me/5491133043426">Consultar por WhatsApp</a>
+        <a class="btn ghost" href="padres.html">Ver todos los toros</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="env">Cabaña Amakaik · BREEDPLAN Angus Argentino, septiembre 2026 · Genealogía Asociación Argentina de Angus</div>
+</footer>
+
+<script>
+(function(){
+  var grande=document.getElementById('fotoGrande');
+  document.getElementById('mini').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b) return;
+    grande.style.backgroundImage="url('"+b.dataset.src+"')";
+    this.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-current', x===b?'true':'false')});
+  });
+})();
+</script>
+
+</body>
+</html>

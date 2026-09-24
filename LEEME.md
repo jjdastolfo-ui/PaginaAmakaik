@@ -1,27 +1,60 @@
-# Sitio nuevo Cabaña Amakaik
+# Sitio Cabaña Amakaik — instrucciones de carga
 
-## Cómo verlo con las fotos
+## Repositorio
+jjdastolfo-ui / PaginaAmakaik — rama `main`
 
-1. Copiá esta carpeta `amakaik-web` a donde quieras.
-2. Meté adentro de `img/` los archivos que bajó el script (`imagenes-amakaik/marca/` y `imagenes-amakaik/galeria/`), todos juntos, sin subcarpetas.
-3. Abrí `index.html` con doble clic.
+## Estructura final
 
-Sin las fotos igual se ve: los bloques de imagen quedan con un fondo de color.
+    PaginaAmakaik/
+    ├── index.html            <- reemplaza al que esta subido
+    ├── padres.html           <- nuevo
+    ├── toro-hercules.html    <- nuevo
+    ├── toro-zeus-ii.html     <- nuevo
+    ├── img/
+    │   ├── logo-amakaik.png
+    │   ├── DJI_0089.webp     (portada)
+    │   ├── DJI_0087.webp
+    │   ├── IMG_1744.webp
+    │   └── ... (el resto de la galeria, ya estan subidas)
+    │   └── toros/            <- CARPETA NUEVA, falta crearla
+    │       ├── hercules-1.webp  hercules-2.webp  hercules-3.webp  hercules-4.webp
+    │       └── zeus-ii-1.webp   zeus-ii-2.webp   zeus-ii-3.webp   zeus-ii-4.webp
+    └── catalogos/
+        ├── toros-pp-2026.pdf     (ya subido)
+        ├── vaquillonas-2026.pdf  <- falta
+        └── catalogo-2023.pdf     <- falta
 
-## Qué fotos usa hoy
+## Como subir los HTML
 
-- `img/logo-amakaik.png` — logo en la barra superior
-- `img/DJI_0089.webp` — foto de portada (dron)
-- `img/IMG_1744.webp` — foto de la seccion Manejo
-- `img/IVAR.webp`, `img/IVAR-2.webp`, `img/toro-B760C8E5.webp`, `img/IMG_2840.webp` — los cuatro toros padres
+1. Entra al repo en GitHub.
+2. Add file -> Upload files.
+3. Arrastra los cuatro HTML juntos.
+4. Commit changes. Reemplaza index.html sin problema.
 
-Son provisorias: elegí las que correspondan a cada toro y cambiamos los nombres.
+## Como subir las fotos de los toros
 
-## Qué falta completar
+GitHub no deja crear una carpeta vacia. Se crea sola al subir el primer archivo:
 
-- Los PDF de los catálogos van en `catalogos/`, con estos nombres:
-  - `toros-pp-2026.pdf`
-  - `vaquillonas-2026.pdf`
-  - `catalogo-2023.pdf`
-- Los DEP de los cuatro toros padres de la seccion Semen estan en blanco (guiones).
-- Falta confirmar cuales toros se ofrecen realmente para semen.
+1. Add file -> Upload files.
+2. Antes de arrastrar nada, en el campo de la ruta escribi:  img/toros/
+3. Arrasta las 8 fotos ahi.
+4. Commit changes.
+
+Los nombres tienen que ser exactos, en minuscula:
+hercules-1.webp a hercules-4.webp, zeus-ii-1.webp a zeus-ii-4.webp
+
+Si las fotos son .jpg en vez de .webp, avisame y cambio la extension en los HTML.
+No hace falta que sean cuatro: si tenes dos, subi esas dos y saco las miniaturas de mas.
+
+## Verificar
+
+https://jjdastolfo-ui.github.io/PaginaAmakaik/
+
+Tarda uno o dos minutos en actualizarse despues de cada commit.
+
+## Todavia pendiente
+
+- Tabla E.R.A. de Zeus II (el PDF vino con una columna corrida)
+- Datos productivos de los dos toros: peso actual, GDP, circ. escrotal medida
+- Los dos catalogos PDF que faltan
+- El resto de los toros padres

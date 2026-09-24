@@ -2,500 +2,450 @@
 <html lang="es-AR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cabaña Amakaik · Aberdeen Angus puro de pedigrí medido con Breedplan y E.R.A.</title>
-<meta name="description" content="Cabaña de Aberdeen Angus en la cuenca del Salado, Buenos Aires. Toros y vientres puros de pedigrí criados 100% a pasto, con datos completos de Breedplan y E.R.A. Catálogos anuales, semen y embriones.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cabaña Amakaik — Aberdeen Angus · Gorchs, Buenos Aires</title>
+<meta name="description" content="Cabaña Aberdeen Angus en la cuenca del Salado, Buenos Aires. Puro de pedigrí criado 100% a pasto, evaluado en Breedplan y E.R.A. AnGus. Catálogos anuales, semen y embriones.">
 <link rel="canonical" href="https://amakaik.com/">
-<meta property="og:title" content="Cabaña Amakaik · Aberdeen Angus productivo">
-<meta property="og:description" content="Angus puro de pedigrí criado 100% a pasto en la cuenca del Salado, con información completa de Breedplan y E.R.A.">
+<meta property="og:title" content="Cabaña Amakaik — Aberdeen Angus · Gorchs, Buenos Aires">
+<meta property="og:description" content="Angus puro de pedigrí criado 100% a pasto en los bañados del Salado, evaluado en Breedplan y E.R.A. AnGus.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://amakaik.com/">
 <meta property="og:image" content="https://amakaik.com/img/og-image.jpg">
+<meta property="og:locale" content="es_AR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --vino:#6E1023;
-  --vino-hondo:#4A0A17;
-  --dorado:#C9A24B;
-  --papel:#FBF8F3;
-  --tinta:#241A14;
-  --tierra:#8A8178;
-  --pasto:#3A4A3F;
-  --linea:rgba(36,26,20,.14);
+  --blanco:#FFFFFF;
+  --hueso:#F7F4F1;
+  --hueso2:#EFEAE5;
+  --negro:#111010;
+  --negro2:#0C0B0B;
+  --gris:#6E6763;
+  --rojo:#9A1828;
+  --rojo-claro:#B8283C;
+  --linea:rgba(17,16,16,.11);
+  --sans:'Plus Jakarta Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --r-chico:10px;
+  --r:14px;
+  --r-grande:20px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body{
-  margin:0;background:var(--papel);color:var(--tinta);
-  font-family:'Oswald',system-ui,sans-serif;font-weight:300;
-  font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased;
+  margin:0;background:var(--blanco);color:var(--negro);
+  font-family:var(--sans);font-size:16.5px;line-height:1.7;font-weight:400;
+  -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.94;margin:0}
-a{color:inherit}
+[id]{scroll-margin-top:100px}
 img{max-width:100%;display:block}
-.env{width:min(1120px,92vw);margin-inline:auto}
-.medida{max-width:64ch}
+a{color:inherit}
+.env{width:min(1240px,90vw);margin-inline:auto}
+h1,h2,h3{font-weight:500;letter-spacing:-.03em;line-height:1.08;margin:0}
+:focus-visible{outline:2px solid var(--rojo);outline-offset:3px}
 
-/* ---------- barra superior ---------- */
-.barra{
-  position:sticky;top:0;z-index:50;background:var(--vino);color:#fff;
-  border-bottom:2px solid var(--dorado);
+.pastilla{
+  display:inline-flex;align-items:center;gap:9px;border:1px solid var(--linea);
+  border-radius:999px;padding:7px 16px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--gris);background:var(--blanco);
 }
-.barra .env{display:flex;align-items:center;gap:28px;min-height:64px}
-.marca{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
-.marca img{height:34px;width:auto}
-.marca span{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.10em}
-.nav{display:flex;gap:26px;font-size:14px;font-weight:400;letter-spacing:.06em}
-.nav a{text-decoration:none;opacity:.86;padding:4px 0;border-bottom:2px solid transparent}
-.nav a:hover,.nav a:focus-visible{opacity:1;border-bottom-color:var(--dorado)}
-.wsp{
-  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
-  background:var(--dorado);color:var(--vino-hondo);font-weight:500;font-size:14px;
-  padding:8px 16px;letter-spacing:.04em;
+.pastilla::before{content:"";width:6px;height:6px;border-radius:999px;background:var(--rojo)}
+
+.btn{
+  display:inline-block;text-decoration:none;font-weight:600;font-size:15px;
+  padding:13px 26px;border-radius:999px;border:1px solid transparent;
+  transition:background .18s,color .18s,border-color .18s;white-space:nowrap;
 }
-.wsp:hover{background:#dcb75f}
-.abrir-nav{display:none}
+.btn-negro{background:var(--negro);color:#fff}
+.btn-negro:hover{background:#2c2828}
+.btn-rojo{background:var(--rojo);color:#fff}
+.btn-rojo:hover{background:var(--rojo-claro)}
+.btn-linea{border-color:var(--linea);color:var(--negro);background:var(--blanco)}
+.btn-linea:hover{background:var(--hueso)}
+.btn-claro{background:#fff;color:var(--negro)}
+.btn-claro:hover{background:var(--hueso2)}
+.btn-fantasma{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-fantasma:hover{background:rgba(255,255,255,.12)}
+
+/* ---------- cabecera ---------- */
+.cabecera{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.cabecera .env{display:flex;align-items:center;gap:26px;min-height:78px}
+.logo img{height:46px;width:auto}
+.menu{display:flex;gap:30px;margin-inline:auto;font-size:15.5px;font-weight:500}
+.menu a{text-decoration:none;opacity:.82}
+.menu a:hover{opacity:1;color:var(--rojo)}
+.acciones-cab{display:flex;gap:10px;align-items:center}
+.acciones-cab .btn{padding:11px 22px;font-size:14.5px}
 
 /* ---------- portada ---------- */
-.portada{position:relative;background:var(--vino-hondo);color:#fff;overflow:hidden}
-.portada .foto{
-  position:absolute;inset:0;
-  background-image:linear-gradient(105deg,rgba(74,10,23,.94) 0%,rgba(74,10,23,.72) 45%,rgba(74,10,23,.42) 100%),
-                   radial-gradient(circle at 72% 40%,#7d5a3a,#3b2a1e),
-                   url('img/DJI_0089.webp');
-  background-size:cover;background-position:center;
+.portada{padding:86px 0 0;text-align:center}
+.portada h1{font-size:clamp(42px,6.6vw,84px);margin:26px auto 0;max-width:16ch}
+.portada .sub{font-size:clamp(17px,1.6vw,21px);color:var(--gris);max-width:56ch;margin:22px auto 0;line-height:1.62}
+.portada .botones{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.foto-portada{
+  margin-top:56px;border-radius:var(--r-grande);overflow:hidden;
+  aspect-ratio:21/9;background:#ddd4c8 center/cover no-repeat;
+  background-image:url('img/DJI_0089.webp');
 }
-.portada .env{position:relative;padding:96px 0 0}
-.portada h1{font-size:clamp(52px,8.4vw,110px);max-width:14ch}
-.entrada{font-size:clamp(17px,2vw,21px);font-weight:200;max-width:48ch;margin:26px 0 40px;color:#f2e6df}
-.acciones{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:76px}
-.boton{
-  display:inline-block;text-decoration:none;font-size:15px;letter-spacing:.05em;font-weight:400;
-  padding:13px 26px;border:1.5px solid var(--dorado);color:var(--dorado);
-}
-.boton:hover,.boton:focus-visible{background:var(--dorado);color:var(--vino-hondo)}
-.boton.lleno{background:var(--dorado);color:var(--vino-hondo);font-weight:500}
-.boton.lleno:hover{background:#dcb75f}
 
-/* ---------- franja de datos (elemento firma) ---------- */
-.franja{
-  position:relative;background:rgba(255,255,255,.06);
-  border-top:1px solid rgba(201,162,75,.5);backdrop-filter:blur(2px);
+/* ---------- tira de datos ---------- */
+.tira{margin-top:20px}
+.tira .env{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;background:var(--hueso);
 }
-.franja .env{padding:0}
-.franja-cab{
-  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;
-  padding:16px 0 10px;font-size:13px;color:#e8d9c8;font-weight:200;
-}
-.franja-cab strong{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:.06em;color:#fff}
-.franja-cab em{font-style:normal;color:var(--dorado)}
-.deps{display:grid;grid-template-columns:repeat(9,1fr);border-left:1px solid rgba(255,255,255,.14)}
-.dep{
-  border-right:1px solid rgba(255,255,255,.14);border-top:1px solid rgba(255,255,255,.14);
-  padding:10px 6px 12px;text-align:center;
-}
-.dep b{display:block;font-family:'Bebas Neue',sans-serif;font-size:23px;font-weight:400;letter-spacing:.02em}
-.dep span{display:block;font-size:10.5px;letter-spacing:.12em;color:#cbb9a8;margin-top:2px}
-.dep.top{background:rgba(201,162,75,.17)}
-.dep.top b{color:var(--dorado)}
-.franja-pie{padding:11px 0 18px;font-size:12.5px;color:#c2ab9c;font-weight:200}
+.tira div{padding:26px 26px;border-right:1px solid var(--linea)}
+.tira div:last-child{border-right:0}
+.tira b{display:block;font-size:23px;font-weight:600;letter-spacing:-.02em}
+.tira span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--gris);margin-top:6px}
 
 /* ---------- secciones ---------- */
-section{padding:82px 0}
-.rotulo{
-  font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:.24em;
-  color:var(--vino);margin-bottom:14px;
+section{padding:104px 0}
+.rotulo{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin:0 0 18px}
+h2{font-size:clamp(30px,4.2vw,50px);max-width:19ch}
+.intro{max-width:60ch;color:var(--gris);margin:20px 0 0;font-size:17.5px}
+.cabecera-seccion{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap}
+
+.pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:40px;margin-top:70px}
+.pilar .num{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--rojo);margin:0 0 16px}
+.pilar h3{font-size:22px;letter-spacing:-.02em;margin-bottom:12px}
+.pilar p{margin:0;color:var(--gris);font-size:15.5px}
+
+/* ---------- tarjetas ---------- */
+.hueso{background:var(--hueso)}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(296px,1fr));gap:24px;margin-top:60px}
+.tarjeta{
+  background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);
+  overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:border-color .18s;
 }
-h2{font-size:clamp(34px,4.6vw,54px);margin-bottom:22px}
-.bajada{font-size:19px;font-weight:200;margin-bottom:0}
-.regla{height:2px;background:var(--dorado);width:64px;margin:0 0 30px}
-
-.pilares{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin-top:52px;border-top:1px solid var(--linea)}
-.pilar{padding:28px 26px 30px;border-bottom:1px solid var(--linea);border-right:1px solid var(--linea)}
-.pilar:first-child{padding-left:0}
-.pilar h3{font-size:27px;color:var(--vino);margin-bottom:10px}
-.pilar p{margin:0;font-size:15.5px;line-height:1.62;color:#4a3c33}
-
-.medicion{background:var(--vino);color:#fff}
-.medicion .rotulo{color:var(--dorado)}
-.medicion .regla{background:var(--dorado)}
-.medicion p{color:#f0e2da;font-weight:200}
-.sistemas{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:46px;border:1px solid rgba(255,255,255,.2)}
-.sistema{padding:30px 28px}
-.sistema+.sistema{border-left:1px solid rgba(255,255,255,.2)}
-.sistema h3{font-size:30px;color:var(--dorado);margin-bottom:6px}
-.sistema .quien{font-size:13px;letter-spacing:.1em;color:#d8c3b4;margin:0 0 14px}
-.sistema p{font-size:15px;line-height:1.6;margin:0}
+.tarjeta:hover{border-color:var(--rojo)}
+.tarjeta .img{aspect-ratio:16/10;background:#ddd4c8 center/cover no-repeat}
+.tarjeta .txt{padding:26px 26px 28px}
+.tarjeta h3{font-size:22px;margin-bottom:9px}
+.tarjeta p{margin:0 0 16px;color:var(--gris);font-size:15px}
+.mas{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo)}
 
 /* ---------- catálogos ---------- */
-.catalogos{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:26px;margin-top:48px}
-.catalogo{background:#fff;border:1px solid var(--linea);display:flex;flex-direction:column}
-.catalogo .tapa{
-  aspect-ratio:3/4;background:linear-gradient(150deg,var(--vino) 0%,var(--vino-hondo) 100%);
-  color:#fff;padding:26px 22px;display:flex;flex-direction:column;justify-content:space-between;
+.grilla-cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(282px,1fr));gap:24px;margin-top:60px}
+.cat{border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;background:var(--blanco);display:flex;flex-direction:column}
+.cat .tapa{
+  aspect-ratio:1/1.3;background:var(--negro);color:#fff;padding:30px 28px;
+  display:flex;flex-direction:column;justify-content:space-between;
 }
-.catalogo .tapa .anio{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.86;color:var(--dorado)}
-.catalogo .tapa .que{font-family:'Bebas Neue',sans-serif;font-size:29px;letter-spacing:.03em}
-.catalogo .tapa .cuantos{font-size:13px;font-weight:200;color:#e4d0c4;margin-top:5px}
-.catalogo .cuerpo{padding:20px 22px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
-.catalogo .cuerpo p{margin:0;font-size:15px;line-height:1.58;color:#4a3c33;flex:1}
-.catalogo .bajar{
-  align-self:flex-start;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:.04em;
-  color:var(--vino);border-bottom:2px solid var(--dorado);padding-bottom:3px;
-}
-.catalogo .bajar:hover{color:var(--dorado)}
-.viejos{margin-top:34px;font-size:15px;color:var(--tierra)}
-.viejos a{color:var(--vino);text-underline-offset:3px}
+.cat .tapa .tipo{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#a9a09b}
+.cat .tapa .anio{font-size:62px;font-weight:600;letter-spacing:-.045em;line-height:1;color:#fff}
+.cat .tapa .nom{font-size:17px;color:#cfc7c2;margin-top:8px;line-height:1.4}
+.cat .txt{padding:26px 28px 30px;display:flex;flex-direction:column;gap:18px;flex:1}
+.cat .txt p{margin:0;color:var(--gris);font-size:15px;flex:1}
+.cat .txt .btn{align-self:flex-start;padding:11px 22px;font-size:14px}
+.nota{margin-top:40px;color:var(--gris);font-size:16px}
+.nota a{color:var(--rojo);text-underline-offset:4px}
 
 /* ---------- semen ---------- */
-.semen{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
-.padres{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:46px}
-.padre{border:1px solid var(--linea);display:flex;flex-direction:column}
-.padre .retrato{aspect-ratio:4/3;background:#e7e0d6 center/cover no-repeat}
-.padre .datos{padding:20px 22px 22px}
-.padre .rp{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:.16em;color:var(--dorado)}
-.padre h3{font-size:26px;color:var(--vino);margin:2px 0 4px}
-.padre .hba{font-size:13px;color:var(--tierra);margin:0 0 14px}
-.mini{display:flex;gap:0;border:1px solid var(--linea);margin-bottom:14px}
-.mini div{flex:1;padding:9px 4px;text-align:center;border-right:1px solid var(--linea)}
-.mini div:last-child{border-right:0}
-.mini b{display:block;font-family:'Bebas Neue',sans-serif;font-size:20px;color:var(--tinta)}
-.mini span{display:block;font-size:10px;letter-spacing:.1em;color:var(--tierra)}
-.padre .consultar{
-  display:inline-block;text-decoration:none;font-size:14px;font-weight:500;
-  color:var(--vino);border-bottom:2px solid var(--dorado);padding-bottom:3px;
+.padre:hover{border-color:var(--rojo)}
+.padres{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:24px;margin-top:60px}
+.padre{text-decoration:none;transition:border-color .18s;background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.padre .img{aspect-ratio:4/3;background:#ddd4c8 center/cover no-repeat}
+.padre .txt{padding:24px 24px 26px}
+.padre .rp{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rojo);margin:0}
+.padre h3{font-size:23px;margin:6px 0 4px}
+.padre .hba{font-family:var(--mono);font-size:11px;color:var(--gris);margin:0 0 20px;letter-spacing:.05em}
+.deps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--linea);border-radius:var(--r-chico);overflow:hidden;margin-bottom:20px}
+.deps div{padding:13px 6px;text-align:center;border-right:1px solid var(--linea);background:var(--hueso)}
+.deps div:last-child{border-right:0}
+.deps b{display:block;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.deps span{display:block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-top:4px}
+
+/* ---------- llamada ---------- */
+.llamada{padding:0 0 104px}
+.llamada .caja{
+  background:var(--negro);color:#fff;border-radius:var(--r-grande);padding:76px 64px;
+  display:grid;grid-template-columns:1.5fr 1fr;gap:52px;align-items:center;
 }
+.llamada h2{color:#fff;font-size:clamp(28px,3.6vw,42px);max-width:16ch}
+.llamada p{color:#b8b0ab;margin:20px 0 0;max-width:44ch}
+.llamada .botones{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.llamada .botones .btn{text-align:center}
 
-/* ---------- manejo ---------- */
-.manejo{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
-.manejo .texto{padding-right:56px}
-.manejo .imagen{background:#ded6ca center/cover no-repeat;min-height:400px;background-image:url('img/IMG_1744.webp')}
+/* ---------- pie ---------- */
+footer{background:var(--hueso);padding:72px 0 32px}
+.pie{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:52px}
+.pie img{height:48px;width:auto;margin-bottom:20px}
+.pie p{margin:0;color:var(--gris);font-size:15px;max-width:36ch}
+.pie h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);font-weight:500;margin:0 0 18px}
+.pie ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.pie a{text-decoration:none;font-size:15px}
+.pie a:hover{color:var(--rojo)}
+.legal{margin-top:52px;padding-top:24px;border-top:1px solid var(--linea);
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
 
-/* ---------- contacto ---------- */
-.contacto{background:var(--vino-hondo);color:#fff}
-.contacto h2{color:#fff}
-.contacto .regla{background:var(--dorado)}
-.datos-contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-top:44px}
-.dato .que{font-size:13px;letter-spacing:.14em;color:var(--dorado);margin-bottom:6px}
-.dato .valor{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.02em}
-.dato a{text-decoration:none;border-bottom:1px solid rgba(201,162,75,.5)}
-.dato a:hover{border-bottom-color:var(--dorado)}
-.dato .detalle{font-size:14px;font-weight:200;color:#d4bfb2;margin-top:4px}
-
-footer{background:#2A0810;color:#b39c8e;padding:30px 0;font-size:13.5px;font-weight:200}
-footer .env{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
-footer a{color:#d4bfb2;text-decoration:none}
-footer a:hover{color:var(--dorado)}
-
-:focus-visible{outline:2px solid var(--dorado);outline-offset:3px}
-
-@media (max-width:860px){
-  .deps{grid-template-columns:repeat(5,1fr)}
-  .sistemas{grid-template-columns:1fr}
-  .sistema+.sistema{border-left:0;border-top:1px solid rgba(255,255,255,.2)}
-  .manejo{grid-template-columns:1fr}
-  .manejo .texto{padding-right:0;padding-bottom:38px}
-  .pilar:first-child{padding-left:26px}
-  .nav{display:none}
-  .portada .env{padding-top:56px}
-  .acciones{margin-bottom:52px}
-  section{padding:58px 0}
+@media (max-width:980px){
+  .menu{display:none}
+  .acciones-cab{margin-left:auto}
+  .acciones-cab .btn-linea{display:none}
+  .tira .env{grid-template-columns:repeat(2,1fr)}
+  .tira div:nth-child(2){border-right:0}
+  .tira div:nth-child(1),.tira div:nth-child(2){border-bottom:1px solid var(--linea)}
+  .llamada .caja{grid-template-columns:1fr;padding:52px 32px;gap:32px}
+  .pie{grid-template-columns:1fr;gap:40px}
+  section{padding:68px 0}
+  .portada{padding-top:58px}
+  .foto-portada{aspect-ratio:4/3}
 }
 </style>
 </head>
 <body>
 
-<header class="barra">
+<header class="cabecera">
   <div class="env">
-    <a class="marca" href="/">
-      <img src="img/logo-amakaik.png" alt="" onerror="this.remove()">
-      <span>Amakaik</span>
-    </a>
-    <nav class="nav">
+    <a class="logo" href="/"><img src="img/logo-amakaik.png" alt="Cabaña Amakaik"></a>
+    <nav class="menu">
       <a href="#cabana">La cabaña</a>
-      <a href="#medicion">Medición</a>
+      <a href="#genetica">Genética</a>
       <a href="#catalogos">Catálogos</a>
-      <a href="#semen">Semen</a>
+      <a href="padres.html">Toros padres</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="wsp" href="https://wa.me/5491133043426">WhatsApp</a>
+    <div class="acciones-cab">
+      <a class="btn btn-linea" href="#contacto">Contacto</a>
+      <a class="btn btn-negro" href="padres.html">Ver catálogo de semen</a>
+    </div>
   </div>
 </header>
 
 <div class="portada">
-  <div class="foto"></div>
   <div class="env">
-    <h1>Angus que se mide, no que se promete</h1>
-    <p class="entrada">Puro de pedigrí criado 100% a pasto en los bañados del Salado. Cada animal del rodeo entra a Breedplan y a E.R.A., machos y hembras por igual.</p>
-    <div class="acciones">
-      <a class="boton lleno" href="#catalogos">Ver catálogos</a>
-      <a class="boton" href="#semen">Semen de nuestros padres</a>
+    <span class="pastilla">Aberdeen Angus · Cuenca del Salado</span>
+    <h1>Angus productivo, medido a campo</h1>
+    <p class="sub">Puro de pedigrí criado 100% a pasto en una zona inundable y de agua salada. El ambiente que los pone a prueba es el que nos garantiza animales adaptados.</p>
+    <div class="botones">
+      <a class="btn btn-negro" href="#catalogos">Descargar catálogo</a>
+      <a class="btn btn-linea" href="padres.html">Ver toros padres</a>
     </div>
+    <div class="foto-portada" role="img" aria-label="Rodeo Angus en el campo de Gorchs"></div>
   </div>
+</div>
 
-  <div class="franja">
-    <div class="env">
-      <div class="franja-cab">
-        <strong>RP 108</strong>
-        <span>Amakaik 108 Realico Profitbuil · colorado · nac. 27/08/2024</span>
-        <em>Índice Pampas +$54</em>
-      </div>
-      <div class="deps">
-        <div class="dep"><b>+1.9</b><span>DIR</span></div>
-        <div class="dep"><b>-1.2</b><span>LG</span></div>
-        <div class="dep"><b>+0.4</b><span>PN</span></div>
-        <div class="dep top"><b>+33</b><span>200</span></div>
-        <div class="dep top"><b>+52</b><span>400</span></div>
-        <div class="dep top"><b>+84</b><span>600</span></div>
-        <div class="dep top"><b>+2.8</b><span>CE</span></div>
-        <div class="dep top"><b>+62</b><span>PESO RES</span></div>
-        <div class="dep top"><b>+1.4</b><span>MARB</span></div>
-      </div>
-      <p class="franja-pie">Evaluación Breedplan Angus Argentino, agosto 2026. En dorado, las características donde el animal entra al 20% superior de la raza.</p>
-    </div>
+<div class="tira">
+  <div class="env">
+    <div><b>Gorchs</b><span>General Belgrano, Bs. As.</span></div>
+    <div><b>10 años</b><span>De cabaña</span></div>
+    <div><b>Breedplan</b><span>Grupo Angus Argentino</span></div>
+    <div><b>E.R.A. AnGus</b><span>INTA y Asoc. Arg. de Angus</span></div>
   </div>
 </div>
 
 <section id="cabana">
   <div class="env">
     <p class="rotulo">La cabaña</p>
-    <h2>Diez años criando en un<br>ambiente que no perdona</h2>
-    <div class="regla"></div>
-    <div class="medida">
-      <p class="bajada">Amakaik es una cabaña familiar de la cuenca del río Salado, en Gorchs, General Belgrano. Nació del sueño de dos hermanos que se criaron en el campo y quisieron convertir su pasión por la genética en un rodeo seleccionado por eficiencia productiva y rentabilidad.</p>
-      <p>Trabajamos en una zona inundable, de agua salada y sin sombra. Estamos convencidos de que ese ambiente hostil transformó al rodeo en una máquina de producir animales adaptados. Criamos 100% a pasto, sin suplementación de ningún tipo, y solo mantenemos las madres que se preñan todos los años en los primeros ciclos y destetan un ternero razonable en peso y tamaño. El resto se descarta.</p>
-      <p><em>Amakaik</em> significa <em>que tiene vida y fuego</em>.</p>
-    </div>
+    <h2>Un ambiente hostil que hace el trabajo de seleccionar</h2>
+    <p class="intro">Amakaik es una cabaña familiar de la cuenca del río Salado. Nació hace diez años del sueño de dos hermanos que se criaron en el campo y quisieron convertir su pasión por la genética en un rodeo seleccionado por eficiencia productiva y rentabilidad.</p>
 
     <div class="pilares">
       <div class="pilar">
-        <h3>Precocidad</h3>
-        <p>Hembras que llegan al servicio de 15 meses y machos que trabajan temprano. Animales que muestran su fertilidad en el fenotipo y en la acción.</p>
+        <p class="num">I</p>
+        <h3>Zona inundable, agua salada, sin sombra</h3>
+        <p>Criamos 100% a pasto, sin suplementación de ningún tipo. Ese ambiente transformó al rodeo en una máquina de producir animales adaptados.</p>
       </div>
       <div class="pilar">
-        <h3>Potencial</h3>
-        <p>Bajo peso al nacer, y después rompen la curva de crecimiento. Carcasa premium, fácil terminación y buen rinde al gancho.</p>
+        <p class="num">II</p>
+        <h3>Fertilidad sin excepciones</h3>
+        <p>Solo quedan las madres que se preñan todos los años en los primeros ciclos y destetan un ternero razonable. Las vacías y las que no dan ternero al destete se descartan.</p>
       </div>
       <div class="pilar">
-        <h3>Fertilidad</h3>
-        <p>Un ternero por año más allá de las condiciones. Una vaca que se preña de 15 meses y no falla nunca es la mayor ganancia de un criador.</p>
-      </div>
-      <div class="pilar">
-        <h3>Rusticidad</h3>
-        <p>Producidos a pasto en el bañado, aguantando seca, inundación y calor. Sin eso, lo anterior no sirve de nada.</p>
+        <p class="num">III</p>
+        <h3>Todo el rodeo, machos y hembras</h3>
+        <p>Medimos y evaluamos a todos los animales por igual. Así se evitan los sesgos que aparecen cuando se analiza solo una parte del rodeo.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="medicion" id="medicion">
+<section class="hueso" id="genetica">
   <div class="env">
-    <p class="rotulo">Medición</p>
-    <h2>Sin datos no hay progreso genético</h2>
-    <div class="regla"></div>
-    <div class="medida">
-      <p>Pesamos e identificamos a cada ternero al nacer y lo seguimos mes a mes. A los 205 días promedio destetamos y pesamos. En octubre viene la pesada de 400 y doscientos días después la de 600. Medimos circunferencia escrotal, hacemos ecografía de carcasa y análisis de mansedumbre.</p>
-      <p>Medimos y evaluamos a todos los animales por igual, machos y hembras. Así se evitan los sesgos que aparecen cuando se analiza solo una parte del rodeo.</p>
-    </div>
-    <div class="sistemas">
-      <div class="sistema">
-        <h3>Breedplan</h3>
-        <p class="quien">ABRI, Australia · grupo Angus Argentino · EBV</p>
-        <p>Compara nuestro rodeo con el de las demás cabañas del grupo. Los EBV expresan el 100% de lo que cada progenitor transmite.</p>
-      </div>
-      <div class="sistema">
-        <h3>E.R.A. AnGus</h3>
-        <p class="quien">INTA y Asociación Argentina de Angus · DEP</p>
-        <p>Los DEP expresan el 50% que hereda cada hijo. Un DEP es la mitad de un EBV: no son cifras comparables entre sí.</p>
-      </div>
+    <p class="rotulo">Nuestro enfoque</p>
+    <h2>Sin mediciones no hay progreso genético</h2>
+    <p class="intro">Pesamos e identificamos a cada ternero al nacer y lo seguimos mes a mes. Destete a los 205 días, pesada de 400 en octubre y de 600 doscientos días después. Circunferencia escrotal, ecografía de carcasa y análisis de mansedumbre.</p>
+
+    <div class="tarjetas">
+      <a class="tarjeta" href="#catalogos">
+        <div class="img" style="background-image:url('img/IMG_1744.webp')"></div>
+        <div class="txt">
+          <h3>Catálogos anuales</h3>
+          <p>Ficha completa de cada animal con los 18 EBV de Breedplan, precisión, percentil y tres generaciones de sangre.</p>
+          <span class="mas">Ver catálogos</span>
+        </div>
+      </a>
+      <a class="tarjeta" href="padres.html">
+        <div class="img" style="background-image:url('img/IVAR.webp')"></div>
+        <div class="txt">
+          <h3>Toros padres y semen</h3>
+          <p>Los dadores de la cabaña, probados a campo en el mismo ambiente donde criamos. Opciones para vaquillonas y para vacas.</p>
+          <span class="mas">Ver toros</span>
+        </div>
+      </a>
+      <a class="tarjeta" href="#contacto">
+        <div class="img" style="background-image:url('img/DJI_0087.webp')"></div>
+        <div class="txt">
+          <h3>Ventas y embriones</h3>
+          <p>Venta particular a campo, remates de la zona y embriones a medida de nuestras donantes.</p>
+          <span class="mas">Consultar</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
 <section id="catalogos">
   <div class="env">
-    <p class="rotulo">Catálogos anuales</p>
-    <h2>Toda la información,<br>antes de que preguntes</h2>
-    <div class="regla"></div>
-    <p class="bajada medida">Cada catálogo trae la ficha completa de cada animal: los 18 EBV de Breedplan con precisión y percentil, los datos productivos y tres generaciones de sangre.</p>
+    <div class="cabecera-seccion">
+      <div>
+        <p class="rotulo">Catálogos anuales</p>
+        <h2>Toda la información, antes de que preguntes</h2>
+      </div>
+      <a class="btn btn-linea" href="https://wa.me/5491133043426">Pedir una ficha suelta</a>
+    </div>
+    <p class="intro">Cada catálogo trae la ficha completa de cada animal: los 18 EBV de Breedplan con precisión y percentil, Índice Pampas, datos productivos y pedigrí de tres generaciones.</p>
 
-    <div class="catalogos">
-      <div class="catalogo">
+    <div class="grilla-cat">
+      <div class="cat">
         <div class="tapa">
-          <div class="que">Toros PP</div>
+          <span class="tipo">Toros puro de pedigrí</span>
           <div>
             <div class="anio">2026</div>
-            <div class="cuantos">18 toros nacidos en 2024</div>
+            <div class="nom">18 toros nacidos en 2024</div>
           </div>
         </div>
-        <div class="cuerpo">
-          <p>Ficha por animal con Breedplan completo, Índice Pampas, pesos de nacer, destete, año y actual, GDP, circunferencia escrotal y pedigrí de tres generaciones.</p>
-          <a class="bajar" href="catalogos/toros-pp-2026.pdf">Descargar PDF</a>
+        <div class="txt">
+          <p>Breedplan completo con la fila de percentiles, Índice Pampas, pesos de nacer, destete, año y actual, ganancia diaria, circunferencia escrotal y genealogía.</p>
+          <a class="btn btn-rojo" href="catalogos/toros-pp-2026.pdf">Descargar PDF</a>
         </div>
       </div>
 
-      <div class="catalogo">
+      <div class="cat">
         <div class="tapa">
-          <div class="que">Vaquillonas</div>
+          <span class="tipo">Vaquillonas preñadas</span>
           <div>
             <div class="anio">2026</div>
-            <div class="cuantos">122 vaquillonas, lote rojo</div>
+            <div class="nom">122 vaquillonas, lote rojo</div>
           </div>
         </div>
-        <div class="cuerpo">
-          <p>Las 122 vaquillonas del lote con su diagnóstico de preñez, toro de preñez resuelto y fecha probable de parto. Cuarenta y cinco preñadas por IATF y setenta y siete por repaso.</p>
-          <a class="bajar" href="catalogos/vaquillonas-2026.pdf">Descargar PDF</a>
+        <div class="txt">
+          <p>Cuarenta y cinco preñadas por IATF y setenta y siete por repaso, con toro de preñez resuelto, diagnóstico de etapa y fecha probable de parto.</p>
+          <a class="btn btn-rojo" href="catalogos/vaquillonas-2026.pdf">Descargar PDF</a>
         </div>
       </div>
 
-      <div class="catalogo">
+      <div class="cat">
         <div class="tapa">
-          <div class="que">Catálogo general</div>
+          <span class="tipo">Edición anterior</span>
           <div>
             <div class="anio">2023</div>
-            <div class="cuantos">Edición anterior</div>
+            <div class="nom">Catálogo general</div>
           </div>
         </div>
-        <div class="cuerpo">
-          <p>El catálogo publicado en el sitio anterior. Queda disponible como archivo de consulta.</p>
-          <a class="bajar" href="catalogos/catalogo-2023.pdf">Descargar PDF</a>
+        <div class="txt">
+          <p>El catálogo que estaba publicado en el sitio anterior. Queda disponible como archivo de consulta.</p>
+          <a class="btn btn-linea" href="catalogos/catalogo-2023.pdf">Descargar PDF</a>
         </div>
       </div>
     </div>
-
-    <p class="viejos">¿Buscás una ficha suelta de un animal? Escribinos el RP por <a href="https://wa.me/5491133043426">WhatsApp</a> y te la mandamos.</p>
   </div>
 </section>
 
-<section class="semen" id="semen">
+<section class="hueso" id="semen">
   <div class="env">
-    <p class="rotulo">Catálogo de semen</p>
-    <h2>Nuestros toros padres</h2>
-    <div class="regla"></div>
-    <p class="bajada medida">Todos seleccionados y probados a campo en el mismo ambiente donde criamos. Hay opciones para vaquillonas y para vacas, según lo que necesite tu rodeo.</p>
+    <div class="cabecera-seccion">
+      <div>
+        <p class="rotulo">Catálogo de semen</p>
+        <h2>Los toros padres de la cabaña</h2>
+      </div>
+      <a class="btn btn-negro" href="padres.html">Ver todos los toros</a>
+    </div>
+    <p class="intro">Dos sangres que se complementan: uno para vacas hechas y otro para vaquillonas de 15 meses. Entrá a cada ficha para ver BREEDPLAN, E.R.A. y genealogía completas.</p>
 
     <div class="padres">
-      <div class="padre">
-        <div class="retrato" style="background-image:url('img/IVAR.webp')"></div>
-        <div class="datos">
-          <div class="rp">RP 38</div>
-          <h3>Amakaik 38</h3>
-          <p class="hba">AMK21038 · toro de repaso del plantel</p>
-          <div class="mini">
-            <div><b>—</b><span>PN</span></div>
-            <div><b>—</b><span>600</span></div>
-            <div><b>—</b><span>CE</span></div>
-            <div><b>—</b><span>IP$</span></div>
+      <a class="padre" href="toro-hercules.html">
+        <div class="img" style="background-image:url('img/toros/hercules-1.webp')"></div>
+        <div class="txt">
+          <p class="rp">RP B332 · Para vacas</p>
+          <h3>Hércules</h3>
+          <p class="hba">Casamú B332 Profitbuilder Eñun</p>
+          <div class="deps">
+            <div><b>+107</b><span>600 d</span></div>
+            <div><b>+63</b><span>Res</span></div>
+            <div><b>+3.8</b><span>CE</span></div>
+            <div><b>+$55</b><span>IP$</span></div>
           </div>
-          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+          <span class="mas">Ver ficha completa</span>
         </div>
-      </div>
+      </a>
 
-      <div class="padre">
-        <div class="retrato" style="background-image:url('img/IVAR-2.webp')"></div>
-        <div class="datos">
-          <div class="rp">RP 78</div>
-          <h3>Amakaik 78</h3>
-          <p class="hba">AMK23078 · toro de repaso del plantel</p>
-          <div class="mini">
-            <div><b>—</b><span>PN</span></div>
-            <div><b>—</b><span>600</span></div>
-            <div><b>—</b><span>CE</span></div>
-            <div><b>—</b><span>IP$</span></div>
+      <a class="padre" href="toro-zeus-ii.html">
+        <div class="img" style="background-image:url('img/toros/zeus-ii-1.webp')"></div>
+        <div class="txt">
+          <p class="rp">RP 56 · Para vaquillonas</p>
+          <h3>Zeus II</h3>
+          <p class="hba">Amakaik 56 Zeus Nantué</p>
+          <div class="deps">
+            <div><b>+4.2</b><span>F. parto</span></div>
+            <div><b>-1.6</b><span>P. nacer</span></div>
+            <div><b>+72</b><span>600 d</span></div>
+            <div><b>+$49</b><span>IP$</span></div>
           </div>
-          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
+          <span class="mas">Ver ficha completa</span>
         </div>
-      </div>
-
-      <div class="padre">
-        <div class="retrato" style="background-image:url('img/B760C8E5-0EE3-46CE-9397-D2321C76C37A.webp')"></div>
-        <div class="datos">
-          <div class="rp">RP 82</div>
-          <h3>Amakaik 82</h3>
-          <p class="hba">AMK23082 · toro de repaso del plantel</p>
-          <div class="mini">
-            <div><b>—</b><span>PN</span></div>
-            <div><b>—</b><span>600</span></div>
-            <div><b>—</b><span>CE</span></div>
-            <div><b>—</b><span>IP$</span></div>
-          </div>
-          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
-        </div>
-      </div>
-
-      <div class="padre">
-        <div class="retrato" style="background-image:url('img/IMG_2840.webp')"></div>
-        <div class="datos">
-          <div class="rp">RP N002</div>
-          <h3>Amakaik N002</h3>
-          <p class="hba">AMK23N002 · toro de repaso del plantel</p>
-          <div class="mini">
-            <div><b>—</b><span>PN</span></div>
-            <div><b>—</b><span>600</span></div>
-            <div><b>—</b><span>CE</span></div>
-            <div><b>—</b><span>IP$</span></div>
-          </div>
-          <a class="consultar" href="https://wa.me/5491133043426">Consultar dosis</a>
-        </div>
-      </div>
+      </a>
     </div>
 
-    <p class="viejos">También producimos embriones a medida: tenemos combinaciones ya confeccionadas de nuestras donantes, o las cruzamos con el toro que elijas.</p>
+    <p class="nota">También producimos embriones a medida: tenemos combinaciones ya confeccionadas de nuestras donantes, o las cruzamos con el toro que elijas.</p>
   </div>
 </section>
 
-<section>
-  <div class="env manejo">
-    <div class="texto">
-      <p class="rotulo">Manejo</p>
-      <h2>Cría y recría</h2>
-      <div class="regla"></div>
-      <p>Las vacas se manejan sobre pastos naturales en forma rotativa, sin quedarse más de cinco días en un lote. Promocionamos ryegrass y lotus tenuis, y rediseñamos aguadas y eléctricos para sostener el sistema. Terminamos con el sobrepastoreo y las especies naturales volvieron.</p>
-      <p>Vacas con cría al pie y vaquillonas de primer y segundo servicio se inseminan el 1 de noviembre. El repaso va con toros propios, y todos los años se suman nuevos para probar. La IATF de las vaquillonas usa toros de bajo peso al nacer, para asegurar ultra facilidad de parto a los 15 meses.</p>
-      <p>Después del tacto se van las vacías y las que no dieron ternero al destete. Presión selectiva sin fin.</p>
-    </div>
-    <div class="imagen" role="img" aria-label="Rodeo en el campo de Gorchs"></div>
-  </div>
-</section>
-
-<section class="contacto" id="contacto">
+<div class="llamada" id="contacto">
   <div class="env">
-    <p class="rotulo">Contacto</p>
-    <h2>Vení a ver los lotes</h2>
-    <div class="regla"></div>
-    <p class="medida">Coordinamos la visita cuando te quede cómodo. Contanos qué necesita tu rodeo y vemos juntos qué animales te sirven.</p>
-    <div class="datos-contacto">
-      <div class="dato">
-        <p class="que">WhatsApp</p>
-        <p class="valor"><a href="https://wa.me/5491133043426">+54 9 11 3304 3426</a></p>
-        <p class="detalle">La vía más rápida</p>
+    <div class="caja">
+      <div>
+        <h2>¿Buscás genética con datos completos?</h2>
+        <p>Consultanos por toros de servicio, vientres, semen, embriones o el catálogo entero. Coordinamos la visita al campo cuando te quede cómodo.</p>
       </div>
-      <div class="dato">
-        <p class="que">Correo</p>
-        <p class="valor"><a href="mailto:info@amakaik.com">info@amakaik.com</a></p>
-        <p class="detalle">Consultas y catálogos</p>
-      </div>
-      <div class="dato">
-        <p class="que">Campo</p>
-        <p class="valor">Gorchs</p>
-        <p class="detalle">General Belgrano, Buenos Aires</p>
-      </div>
-      <div class="dato">
-        <p class="que">Instagram</p>
-        <p class="valor"><a href="https://instagram.com/angusamakaik">@angusamakaik</a></p>
-        <p class="detalle">Fechas de remates</p>
+      <div class="botones">
+        <a class="btn btn-claro" href="https://wa.me/5491133043426">Consultar por WhatsApp</a>
+        <a class="btn btn-fantasma" href="mailto:info@amakaik.com">Escribir un mail</a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <footer>
   <div class="env">
-    <span>Cabaña Amakaik · Aberdeen Angus · Gorchs, General Belgrano, Buenos Aires</span>
-    <span><a href="https://wa.me/5491133043426">WhatsApp</a> · <a href="mailto:info@amakaik.com">info@amakaik.com</a> · <a href="https://instagram.com/angusamakaik">Instagram</a></span>
+    <div class="pie">
+      <div>
+        <img src="img/logo-amakaik.png" alt="Cabaña Amakaik">
+        <p>Cabaña Aberdeen Angus en Gorchs, General Belgrano. Puro de pedigrí criado 100% a pasto en la cuenca del Salado.</p>
+      </div>
+      <div>
+        <h4>La cabaña</h4>
+        <ul>
+          <li><a href="#cabana">Quiénes somos</a></li>
+          <li><a href="#genetica">Genética y manejo</a></li>
+          <li><a href="#catalogos">Catálogos anuales</a></li>
+          <li><a href="padres.html">Toros padres y semen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5491133043426">WhatsApp +54 9 11 3304 3426</a></li>
+          <li><a href="mailto:info@amakaik.com">info@amakaik.com</a></li>
+          <li><a href="https://instagram.com/angusamakaik">Instagram @angusamakaik</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Cabaña Amakaik · Aberdeen Angus · Gorchs, General Belgrano, Buenos Aires</p>
   </div>
 </footer>
 
